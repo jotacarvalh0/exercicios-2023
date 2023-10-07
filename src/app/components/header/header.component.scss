@@ -1,0 +1,116 @@
+
+.container{
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  background-color: #FDF1EB;
+}
+.header {
+    display: flex;
+    align-items: center;
+    height: 68px;
+    width: 90%;
+    margin: 0 auto;
+    // background-color: #FFFFFF;
+    color: #333333;
+    font-family: 'Quicksand', sans-serif;
+    justify-content: space-between;
+  
+    .left-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 70%;
+  
+      .header-text {
+        font-weight: 400;
+        font-size: 14px;
+        color: #725C5C;
+        margin: 0;
+      }
+  
+      .header-text-large {
+        font-weight: 400;
+        font-size: 22px;
+        color: #725C5C;
+        margin: 0;
+      }
+    }
+    .language-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      width: 97px;
+      height: 34px;
+      border-radius: 3px;
+      border: 1px solid #CCCCCC;
+  
+      img {
+        width: 22px;
+        height: 21px;
+      }
+  
+      .language {
+        font-weight: 400;
+        font-size: 14px;
+        color: #333333;
+      }
+  
+      .arrow-down {
+        font-size: 10px;
+        color: #333333;
+      }
+    }
+  
+    .right-content {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .text-content{
+        display: flex;
+        flex-direction: column;
+
+
+        .welcome-text {
+          font-weight: 400;
+          font-size: 14px;
+          color: #333333;
+          margin: 0;
+          display: flex;
+          justify-content: flex-end;
+        }
+    
+        .email-text {
+          font-weight: 400;
+          font-size: 12px;
+          color: #333333;
+          margin: 0;
+        }
+      }
+      .notification-badge {
+        position: absolute;
+        top: 18px;
+        right: 56px;
+        background-color: #F85959; 
+        color: #FFFFFF;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        font-weight: bold;
+        z-index: 1;
+      }      
+      .user-avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+    }
+  }
+  
