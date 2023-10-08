@@ -8,6 +8,7 @@ import { MainPrincipalComponent } from './components/main-principal/main-princip
 import { DetailsComponent } from './components/details/details.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { PostComponent } from './components/post/post.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PostComponent } from './components/post/post.component';
     MainPrincipalComponent,
     DetailsComponent,
     ResumeComponent,
-    PostComponent
+    PostComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
