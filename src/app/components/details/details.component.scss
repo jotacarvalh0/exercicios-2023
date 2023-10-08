@@ -1,0 +1,40 @@
+.details-component {
+    width: 242px;
+    height: 439px;
+    border: 1px solid #BFBFBF;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  
+    .header {
+      background-color: #ECECEC;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: 20px;
+    }
+  
+    .content {
+      /* Estilos para o conteúdo dos detalhes */
+      /* Adicione aqui as informações que deseja exibir */
+    }
+  
+    .scroll-bar {
+      width: 3px;
+      background-color: #e7e7e7;
+      position: absolute;
+      top: 45px;
+      bottom: 0;
+      right: 0;
+  
+      .scroll-thumb {
+        width: 100%;
+        background-color: #BFBFBF;
+        cursor: pointer;
+      }
+    }
+  }
+  
