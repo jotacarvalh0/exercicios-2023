@@ -1,0 +1,58 @@
+.container{
+    width: 85%;
+    margin-left: auto;
+  }
+p {
+    margin-top: 10px;
+    color: #5c5c5c;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+  .resumo-expand {
+    border: 1px solid #ECECEC;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .header {
+    background-color: #FDF1EB;
+    color: #4E4E4E;
+    padding: 10px;
+    text-align: start;
+  }
+  
+  .content {
+    padding: 10px;
+  
+    .ver-mais-button {
+      background-color: #ED7839;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  
+    .expandido {
+      display: none;
+  
+      p {
+        margin-top: 10px;
+        color: #5c5c5c;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Quicksand';
+        margin-bottom: 15px;
+      }
+  
+      .diminuir-button {
+        background-color: #ED7839;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+      }
+    }
+  }
+  
