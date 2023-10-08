@@ -1,40 +1,69 @@
+.boldStrong{
+    color: #4E4E4E;
+    font-size: 14px;
+}
 .details-component {
+    margin-top: 5px;
     width: 242px;
-    height: 439px;
+    height: 364px;
     border: 1px solid #BFBFBF;
+    border-radius: 1px;
     display: flex;
     flex-direction: column;
     position: relative;
     overflow: hidden;
-  
-    .header {
-      background-color: #ECECEC;
-      height: 45px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 500;
-      font-size: 20px;
-    }
-  
-    .content {
-      /* Estilos para o conteúdo dos detalhes */
-      /* Adicione aqui as informações que deseja exibir */
-    }
-  
-    .scroll-bar {
-      width: 3px;
-      background-color: #e7e7e7;
-      position: absolute;
-      top: 45px;
-      bottom: 0;
-      right: 0;
-  
-      .scroll-thumb {
-        width: 100%;
-        background-color: #BFBFBF;
-        cursor: pointer;
-      }
+    .container {
+        .header {
+            background-color: #FDF1EB;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            font-weight: 500;
+            font-size: 20px;
+
+            .title{
+                margin-left: 18px;
+                font-weight: 500;
+                font-size: 500;
+            }
+          }
+        
+          .content {
+            margin-left: 18px;
+
+            .description{
+                font-weight: 400;
+                font-size: 12px;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            .authors{
+                font-weight: 400;
+                font-size: 12px;
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            .subDescriptions{
+                color: #ADA0A0;
+                font-size: 13px;
+            }
+          }
+        
+          .scroll-bar {
+            width: 3px;
+            background-color: #e7e7e7;
+            position: absolute;
+            top: 45px;
+            bottom: 0;
+            right: 0;
+        
+            .scroll-thumb {
+              width: 100%;
+              background-color: #BFBFBF;
+              cursor: pointer;
+            }
+          }
     }
   }
   
