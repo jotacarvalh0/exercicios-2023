@@ -1,61 +1,45 @@
 .container{
     width: 85%;
     margin-left: auto;
+    font-family: 'Roboto';
   }
-p {
-    margin-top: 10px;
-    color: #5c5c5c;
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 15px;
+#btn-show-more{
+  color: #ED7839;
+  text-decoration: none;
+  cursor: pointer;
 }
 
   .resumo-expand {
     border: 1px solid #ECECEC;
     width: 90%;
     margin: 0 auto;
-  }
+    .header {
+      background-color: #FDF1EB;
+      color: #4E4E4E;
+      padding: 10px;
+      text-align: start;
   
-  .header {
-    background-color: #FDF1EB;
-    color: #4E4E4E;
-    padding: 10px;
-    text-align: start;
-
-    font-size: 20px;
-    font-weight: 500;
-  }
-  
-  .content {
-    padding: 10px;
-  
-    .ver-mais-button {
-      background-color: #ED7839;
-      color: white;
-      border: none;
-      padding: 5px 10px;
-      cursor: pointer;
+      font-size: 20px;
+      font-weight: 500;
     }
-  
-    .expandido {
-      display: none;
-  
+    
+    .content {
+      padding: 10px;
+    
       p {
         margin-top: 10px;
         color: #5c5c5c;
         font-size: 14px;
         font-weight: 400;
-        font-family: 'Quicksand';
         margin-bottom: 15px;
       }
-  
-      .diminuir-button {
-        background-color: #ED7839;
-        color: white;
-        border: none;
-        padding: 5px 10px;
-        cursor: pointer;
+      #mais{
+        display: none;
       }
     }
-  }
+    
+}
+
+  
+  
   

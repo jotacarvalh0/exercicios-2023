@@ -6,6 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./post.component.scss']
 })
 export class PostComponent implements OnInit {
+  mostrarFormulario = false;
+
+  toggleForm() {
+    this.mostrarFormulario = !this.mostrarFormulario;
+  }
 
   constructor() { }
 

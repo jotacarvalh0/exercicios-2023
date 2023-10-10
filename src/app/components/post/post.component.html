@@ -1,5 +1,5 @@
 <div class="container">
-    <div class="container-post">
+    <div class="container-post" *ngIf="!mostrarFormulario">
         <div class="header-post">
             Discussões
         </div>
@@ -18,9 +18,13 @@
             </p>
         </div>
         <div class="linha">
-            <button class="botao"><img src="../../../assets/icon - criar.png" alt=""> criar tópico</button>
+            <button (click)="toggleForm()" class=".btn-create-topic"><img src="../../../assets/icon - criar.png" alt=""> criar tópico</button>
         </div>
-
+    </div>
+    <form *ngIf="mostrarFormulario">
+        <h2>Seu formulário para criar tópico aqui</h2>
+    </form>
+    
         <div class="container-card">
             <div class="card-header">
                 <h3>Assunto da pergunta aparece aqui</h3>

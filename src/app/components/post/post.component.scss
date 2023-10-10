@@ -61,7 +61,7 @@ $gradiente-linear-vertical: linear-gradient(to bottom, #FFB354, #EE7A3A);
                 transform: translateY(-50%);
               }
 
-            .botao {
+            .btn-create-topic {
                 width: 133px;
                 height: 32px;
                 margin: 0 auto;
@@ -77,57 +77,55 @@ $gradiente-linear-vertical: linear-gradient(to bottom, #FFB354, #EE7A3A);
             }
           }
           
-          .container-card{
-            width: 95%;
-            height: 148px;
-            margin: auto;
-            margin-top: 15px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 25px;
-
-            box-shadow: -1px 0px 10px -8px rgba(0,0,0,0.79);
-
-            border: 1px solid #E7E7E7;
-            border-radius: 4px;
-            .card-header{
-                font-size: 16px;
-                font-weight: 700;
-                color: #ED7839;
-                p {
-                    font-size: 12px;
-                    font-weight: 500;
-                    color: #5c5c5c;
-                    margin-top: 3px;
-                }
-            }
-            .card-body{
-                margin-top: 10px;
-                font-size: 14px;
-                font-weight: 400;
-                color: #4d4d4d;
-            }
-            .card-footer{
-                display: flex;
-                gap: 15px;
-                margin-top: 12px;
-                align-items: center;
-                .maisopcoes{
-                    height: 12px;
-                    width: 4px;
-                }
-                .favoritar{
-                    height: 27px;
-                    width: 27px;
-                }
-                .interativos{
-                    font-weight: 350;
-                    font-size: 14px;
-                    color: #757575;
-                }
-            }
+    .container-card{
+      width: 95%;
+      height: 148px;
+      margin: auto;
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 25px;
+      box-shadow: -1px 0px 10px -8px rgba(0,0,0,0.79);
+      border: 1px solid #E7E7E7;
+      border-radius: 4px;
+      .card-header{
+          font-size: 16px;
+          font-weight: 700;
+          color: #ED7839;
+          p {
+              font-size: 12px;
+              font-weight: 500;
+              color: #5c5c5c;
+              margin-top: 3px;
           }
+      }
+      .card-body{
+          margin-top: 10px;
+          font-size: 14px;
+          font-weight: 400;
+          color: #4d4d4d;
+      }
+      .card-footer{
+          display: flex;
+          gap: 15px;
+          margin-top: 12px;
+          align-items: center;
+          .maisopcoes{
+              height: 12px;
+              width: 4px;
+          }
+          .favoritar{
+              height: 27px;
+              width: 27px;
+          }
+          .interativos{
+              font-weight: 350;
+              font-size: 14px;
+              color: #757575;
+          }
+      }
+    }
                    
           
     }
