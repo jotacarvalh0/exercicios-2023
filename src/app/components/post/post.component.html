@@ -1,59 +1,93 @@
 <div class="container">
-    <div class="container-post" *ngIf="!mostrarFormulario">
-        <div class="header-post">
-            Discussões
-        </div>
-        <div class="infos-post">
-            <p>Compartilhe suas ideias ou dúvidas com os autores!</p>
-            <div class="icons-post">
-                <img src="../../../assets/icone1.png" alt="">
-                <img src="../../../assets/icone2.png" alt="">
-                <img src="../../../assets/icone3.png" alt="">
+    <div class="container-post">
+        <div class="create-new-post" *ngIf="!mostrarFormulario && showCreateNewPost">
+            <div class="header-post">
+                Discussões
             </div>
-            <p class="description-post">
-                Sabia que o maior estimulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
-            </p>
-            <p class="description-post">
-                questionamentos ou sugestões para o autor!
-            </p>
+            <div class="infos-post">
+                <p>Compartilhe suas ideias ou dúvidas com os autores!</p>
+                <div class="icons-post">
+                    <img src="../../../assets/icone1.png" alt="">
+                    <img src="../../../assets/icone2.png" alt="">
+                    <img src="../../../assets/icone3.png" alt="">
+                </div>
+                <p class="description-post">
+                    Sabia que o maior estimulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
+                </p>
+                <p class="description-post">
+                    questionamentos ou sugestões para o autor!
+                </p>
+            </div>
+            <div class="linha">
+                <button (click)="toggleForm()" class=".btn-create-topic"><img src="../../../assets/icon - criar.png" alt=""> criar tópico</button>
+            </div>
         </div>
-        <div class="linha">
-            <button (click)="toggleForm()" class=".btn-create-topic"><img src="../../../assets/icon - criar.png" alt=""> criar tópico</button>
+        <div class="form-container" *ngIf="mostrarFormulario" >
+            <div class="header-post">
+                Discussões
+            </div>
+            <p class="form-description">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+            <form (ngSubmit)="submitPost()">
+                <div class="assunto form-input">
+                    <label for="" >Assunto</label>
+                    <input type="text" placeholder="Defina um tópico sucinto para notificar os autores...">
+                </div>
+                <div class="conteudo form-input">
+                    <label for="">Conteúdo</label>
+                    <textarea></textarea>
+                </div>
+                <div class="submit-bar">
+                    <div class="barra-btn"></div>
+                    <button (click)="submitPost()" type="button">Enviar</button>
+                </div>
+            </form>
+            <div class="linha"></div>
+        </div>
+        <div class="form-success-message" *ngIf="showSuccessMessage">
+            <p class="formS-description">Seu tópico foi enviado com sucesso! :D</p>
+            <p class="formS-sub-description">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+            <p class="formS-sub-description-laranja">Descubra outros trabalhos!</p>
+            <div class="linha">
+                <button (click)="reloadPage()" class=".btn-create-topic"> criar novo tópico</button>
+            </div>
+            <div class="background-card">
+                <div class="container-bg-card">
+                    <img src="../../../assets/.svg" alt="check">
+                    <p>Aguardando feedback dos autores</p>
+                    <p class="formS-sub-description-laranja">Editar tópico</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container-card">
+            <div class="card-header">
+                <h3>Assunto da pergunta aparece aqui</h3>
+                <p>Carlos Henrique Santos</p>
+            </div>
+            <div class="card-body">
+                <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+            </div>
+            <div class="card-footer">
+                <img src="../../../assets/mais informações.png" alt="mais opções" class="maisOpcoes">
+                <img src="../../../assets/favoritar.png" alt="favoritar" class="favoritar">
+                <div class="interativos">1 like</div>
+                <div class="interativos">1 resposta</div>
+            </div>
+        </div>
+        <div class="container-card">
+            <div class="card-header">
+                <h3>Assunto da pergunta aparece aqui</h3>
+                <p>Carlos Henrique Santos</p>
+            </div>
+            <div class="card-body">
+                <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+            </div>
+            <div class="card-footer">
+                <img src="../../../assets/mais informações.png" alt="mais opções" class="maisOpcoes">
+                <img src="../../../assets/favoritar.png" alt="favoritar" class="favoritar">
+                <div class="interativos">1 like</div>
+                <div class="interativos">1 resposta</div>
+            </div>
         </div>
     </div>
-    <form *ngIf="mostrarFormulario">
-        <h2>Seu formulário para criar tópico aqui</h2>
-    </form>
-    
-        <div class="container-card">
-            <div class="card-header">
-                <h3>Assunto da pergunta aparece aqui</h3>
-                <p>Carlos Henrique Santos</p>
-            </div>
-            <div class="card-body">
-                <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-            </div>
-            <div class="card-footer">
-                <img src="../../../assets/mais informações.png" alt="mais opções" class="maisOpcoes">
-                <img src="../../../assets/favoritar.png" alt="favoritar" class="favoritar">
-                <div class="interativos">1 like</div>
-                <div class="interativos">1 resposta</div>
-            </div>
-        </div>
-
-        <div class="container-card">
-            <div class="card-header">
-                <h3>Assunto da pergunta aparece aqui</h3>
-                <p>Carlos Henrique Santos</p>
-            </div>
-            <div class="card-body">
-                <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-            </div>
-            <div class="card-footer">
-                <img src="../../../assets/mais informações.png" alt="mais opções" class="maisOpcoes">
-                <img src="../../../assets/favoritar.png" alt="favoritar" class="favoritar">
-                <div class="interativos">1 like</div>
-                <div class="interativos">1 resposta</div>
-            </div>
-        </div>
 </div>
