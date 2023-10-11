@@ -14,8 +14,8 @@ describe('checa elementos básicos', () => {
   });
 
   it('botão de criar tópico existe', () => {
-    cy.get('.btn-create-topic').contains('criar tópico');
-  });
+    cy.get('[data-cy=btn-create-topic]').contains('criar tópico');
+  });  
 
   it('expandir tópico funciona', () => {
     cy.get('.answered-topic .ops-topic-subject').click();

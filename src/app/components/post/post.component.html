@@ -1,6 +1,6 @@
 <div class="container">
     <div class="container-post">
-        <div class="create-new-post" *ngIf="!mostrarFormulario && showCreateNewPost">
+        <div class="create-new-post answered-topic" *ngIf="!mostrarFormulario && showCreateNewPost">
             <div class="header-post">
                 Discussões
             </div>
@@ -19,17 +19,17 @@
                 </p>
             </div>
             <div class="linha">
-                <button (click)="toggleForm()" class=".btn-create-topic"><img src="../../../assets/icon - criar.png" alt=""> criar tópico</button>
+                <button (click)="toggleForm()" data-cy="btn-create-topic"><img src="../../../assets/icon - criar.png" alt="">criar tópico</button>
             </div>
         </div>
-        <div class="form-container" *ngIf="mostrarFormulario" >
+        <div class="form-container ops-topic-subject" *ngIf="mostrarFormulario" >
             <div class="header-post">
                 Discussões
             </div>
             <p class="form-description">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
             <form (ngSubmit)="submitPost()">
                 <div class="assunto form-input">
-                    <label for="" >Assunto</label>
+                    <label>Assunto</label>
                     <input type="text" placeholder="Defina um tópico sucinto para notificar os autores...">
                 </div>
                 <div class="conteudo form-input">
@@ -48,7 +48,7 @@
             <p class="formS-sub-description">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
             <p class="formS-sub-description-laranja">Descubra outros trabalhos!</p>
             <div class="linha">
-                <button (click)="reloadPage()" class=".btn-create-topic"> criar novo tópico</button>
+                <button (click)="reloadPage()" class="btn-create-topic"> criar novo tópico</button>
             </div>
             <div class="background-card">
                 <div class="container-bg-card">
@@ -59,7 +59,7 @@
             </div>
         </div>
         
-        <div class="container-card">
+        <div class="container-card comments-container">
             <div class="card-header">
                 <h3>Assunto da pergunta aparece aqui</h3>
                 <p>Carlos Henrique Santos</p>
@@ -74,7 +74,7 @@
                 <div class="interativos">1 resposta</div>
             </div>
         </div>
-        <div class="container-card">
+        <div class="container-card comments-container">
             <div class="card-header">
                 <h3>Assunto da pergunta aparece aqui</h3>
                 <p>Carlos Henrique Santos</p>

@@ -16,7 +16,7 @@ export class ResumeComponent implements OnInit {
   verMais(): void {
     const pontos = document.getElementById("pontos");
     const maisTexto = document.getElementById("mais");
-    const btnShowmore = document.getElementById("btn-show-more");
+    const btnShowmore = document.getElementById("btn-show");
   
     if (pontos && maisTexto && btnShowmore) {
       if (pontos.style.display === "none") {
